@@ -1,0 +1,37 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+#left {
+    display: inline-block;
+    margin-left: 300px;
+}
+
+#right {
+    display: inline-block;
+    margin-left: 200px;
+}
+
+#container {
+    display: flex;
+    margin-top: 50px;
+}
+
+p {
+    margin-top: 20px;
+}
+
+.submit {
+    margin-top: 15px;
+}
+
+#green {
+    color: green;
+}
+
+#log {
+    margin-top: 15px;
+    display: block;
+}

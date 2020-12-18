@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Registration</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <p>Success Welcome! {{request.session.user_first_name}} {{request.session.user_last_name}}</p>
+    <p>email: {{request.session.user_email}}</p>
+    <p>ID: {{request.session.user_id}}</p>
+    <p id="green">Successfully registered (or logged in)!</p>
+    <a id="log" href="/logout">Log out</a>
+</body>
+</html>
