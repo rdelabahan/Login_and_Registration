@@ -23,15 +23,7 @@ def register(request):
             birthday = request.POST["date"],
             password = pw_hash,
         )
-        try:
-            registered_user = User.objects.get(email = request.POST["email"])
-            request.session['user_id'] = registered_user.id
-            request.session['user_first_name'] = registered_user.first_name
-            request.session['user_last_name'] = registered_user.last_name
-            request.session['user_email'] = registered_user.email
-            
-        except:
-            pass
+        messages.success(request, 'You have successfully registered!')
         return redirect("/success")
 
 def success(request):
